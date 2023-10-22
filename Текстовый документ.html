@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web Design Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/css.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logoo" href="#"><img src="logo.jpg" alt="logo" class="logo"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Woman</a></li>
+                  <li><a class="dropdown-item" href="#">Mans</a></li>
+                  <li><a class="dropdown-item" href="#">Children</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Welcome to Our Website</h1>
+
+        <button class="btn btn-primary mr-2">Primary Button</button>
+        <button class="btn btn-secondary mr-2">Secondary Button</button>
+
+        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="sports-shop.jpg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="logo.jpg" alt="Slide 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-primary mt-4" role="alert">
+            This is an alert.
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Adult Products.</h2>
+                <p>Quality adult merchandise ordered from america.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Children's merchandise.</h2>
+                <p>Great stuff for kids, good quality, ordered from China, at low prices.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="display-4">If there are any questions, please contact the link below.</h2>
+        <p class="lead">Questions:</p>
+    </div>
+
+    <script>
+        const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
